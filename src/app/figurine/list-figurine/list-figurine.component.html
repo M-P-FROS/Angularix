@@ -1,0 +1,34 @@
+<h1 class="center">Liste des figurines Uderzo et Gosciny</h1>
+
+<div class="contenair">
+  <div class="row">
+    <div *ngFor="let figurine of figurineList" class="col m6 s12">
+      <div
+        (click)="goToFigurine(figurine)"
+        class="card horizontal"
+        figBorderCard
+      >
+        <div class="card-image">
+          <img [src]="figurine.pictureUrl" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>
+              {{ figurine.name | uppercase }}
+            </p>
+            <p>Prix en €: {{ figurine.prix }}</p>
+            <span
+              *ngFor="let types of figurine.types"
+              class="{{ types | figurineTypeColor }}"
+            >
+              {{ types }}
+            </span>
+            <p>
+              <small>{{ figurine.created | date : "dd/MM/yy" }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
