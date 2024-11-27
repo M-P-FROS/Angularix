@@ -7,11 +7,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FigurineModule } from './figurine/figurine.module';
 import { PageAccueilComponent } from './page-accueil/page-accueil.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    PageAccueilComponent
+    PageAccueilComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { Figurine } from '../figurine/figurine';
 
 
 @Component({
-  selector: 'app-page-accueil',
+  selector: 'accueil',
   templateUrl: './page-accueil.component.html',
   styleUrl: './page-accueil.component.css'
 })

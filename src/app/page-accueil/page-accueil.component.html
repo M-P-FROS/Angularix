@@ -1,20 +1,57 @@
 <div className="accueil">
   <body>
-    <h2 class="center">Notre entreprise "AU PETIT VILLAGE"</h2>
-    <p>
-      Créée par des passionnés de la fameuse bande dessinnée de GOSCINY et
-      UDERZO, cette entreprise réalise des figurines des principaux personnages
-      en sucre d'orge pour régaler petits et grands.
-    </p>
-    <p>
-      Notre entreprise s'est implantée en Normandie. Nous n'utilisons que des
-      prosduits de circuits courts et issus de l'agricultue biologique
-    </p>
-    <p>
-      Nous réalisons nos figurines à la commande selon les tailles demandées
-    </p>
-    <br />
-    <p>La livraison est réalisée sous 48 heures</p>
+    <h2>Notre entreprise "AU PETIT VILLAGE"</h2>
+    <div class="presentation">
+      <p>
+        Créée par des passionnés de la fameuse bande dessinée de GOSCINY et
+        UDERZO, cette entreprise réalise des figurines des principaux
+        personnages en sucre d'orge pour régaler petits et grands.
+      </p>
+      <p>
+        Notre entreprise s'est implantée en Normandie. Nous n'utilisons que des
+        produits de circuits courts et issus de l'agriculture biologique
+      </p>
+      <p>
+        Nous réalisons nos figurines à la commande selon les tailles demandées
+      </p>
+      <br />
+      <p>La livraison est réalisée sous 48 heures</p>
+    </div>
     <h3>Catalogue des figurines réalisables en sucre d'orge</h3>
+
+    <table class="flex table table-striped">
+      <thead class="contenair">
+        <tr>
+          <th scope="col">Nom figurine</th>
+          <th scope="col">Prix figurine</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr>
+          <td>
+            {{ figurineList[0].name }}
+          </td>
+          <td>{{ figurineList[0].prix }}€</td>
+        </tr>
+        <tr>
+          <td>
+            {{ figurineList[1].name }}
+          </td>
+          <td>{{ figurineList[1].prix }}€</td>
+        </tr>
+        <tr>
+          <td>
+            {{ figurineList[2].name }}
+          </td>
+          <td>{{ figurineList[2].prix }}€</td>
+        </tr>
+        <tr>
+          <td>
+            {{ figurineList[3].name }}
+          </td>
+          <td>{{ figurineList[3].prix }}€</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </div>
