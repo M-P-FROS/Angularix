@@ -8,6 +8,9 @@ import { FigurineModule } from './figurine/figurine.module';
 import { PageAccueilComponent } from './page-accueil/page-accueil.component';
 import { HeaderComponent } from './header/header.component';
 import { PageAboutComponent } from './page-about/page-about.component';
+import { OrderByPipe } from './order-by.pipe';
+import { FilterPipe } from './filter.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { PageAboutComponent } from './page-about/page-about.component';
     PageAccueilComponent,
     HeaderComponent,
     PageAboutComponent,
+    OrderByPipe,
+    FilterPipe,
+    FooterComponent,
 
   ],
   imports: [

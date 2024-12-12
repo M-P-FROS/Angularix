@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   <img src='paf.jpg' />
   <h2>Paf, cette page n'existe pas!</h2>
   <a routerLink="/figurines" class="waves-effect waves-teal btn-flat">
-  Retourner à la page d'accueil
+  Retourner à notre catalogue
 </a>
   `,
 

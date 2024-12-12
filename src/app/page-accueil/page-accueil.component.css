@@ -24,3 +24,9 @@ h3 {
   font-family: "fonttwo";
   font-size: 2vw;
 }
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

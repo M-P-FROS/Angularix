@@ -12,6 +12,9 @@ import { Figurine } from '../figurine/figurine';
 })
 export class PageAccueilComponent implements OnInit {
   figurineList:Figurine[] = FIGURINES;
+  orderBy: "asc" | "desc" = "asc";
+
+
   
 
   ngOnInit(): void {
