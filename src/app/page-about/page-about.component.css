@@ -1,0 +1,27 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+.about.body {
+  width: 80%;
+  font-family: "fonttwo";
+  font-size: 3vw;
+}
+
+p {
+  font-size: 3vw;
+}
+
+.usine {
+  width: 80%;
+  img {
+    width: 100%;
+  }
+}
+
+.logoangularix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

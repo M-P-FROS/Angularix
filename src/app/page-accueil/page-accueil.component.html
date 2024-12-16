@@ -1,6 +1,13 @@
 <div className="accueil">
   <body>
-    <h2>Notre entreprise "AU PETIT VILLAGE"</h2>
+    <h1>Notre entreprise "AU PETIT VILLAGE"</h1>
+
+    <div class="logoangularix">
+      <img
+        src="/Logo.jpg"
+        alt="image dun casque gaulois avec le nom de la société Angularix"
+      />
+    </div>
     <div class="presentation">
       <p>
         Créée par des passionnés de la fameuse bande dessinée de GOSCINY et
@@ -17,55 +24,61 @@
       <br />
       <p>La livraison est réalisée sous 48 heures</p>
     </div>
-    <h3>Catalogue des figurines réalisables en sucre d'orge</h3>
-    <div ng-app="myApp" ng-controller="orderCtrl" className="myArray">
-      <table class="flex table table-striped">
-        <div class="tableau">
-          <thead class="contenair">
-            <tr>
-              <th scope="col">Nom figurine</th>
-              <th scope="col">Prix figurine</th>
-            </tr>
-          </thead>
-          <tbody
-            class="text-center"
-            *ngFor="let figurine of figurineList | orderBy"
-          >
-            <tr>
-              <td>
-                {{ figurineList[0].name }}
-              </td>
-              <td>{{ figurineList[0].prix }}€</td>
-            </tr>
-            <tr>
-              <td>
-                {{ figurineList[1].name }}
-              </td>
-              <td>{{ figurineList[1].prix }}€</td>
-            </tr>
-            <tr>
-              <td>
-                {{ figurineList[2].name }}
-              </td>
-              <td>{{ figurineList[2].prix }}€</td>
-            </tr>
-            <tr>
-              <td>
-                {{ figurineList[3].name }}
-              </td>
-              <td>{{ figurineList[3].prix }}€</td>
-            </tr>
-          </tbody>
+
+    <h3 class="px-5">Catalogue des figurines réalisables en sucre d'orge</h3>
+    <div class="contenair">
+      <div class="tableautrie">
+        <div ng-app="myApp" ng-controller="orderCtrl" className="myArray">
+          <table class="flex table mx-auto">
+            <div class="tableau">
+              <thead class="contenair">
+                <tr>
+                  <th scope="col">Nom figurine</th>
+                  <th scope="col">Prix figurine</th>
+                </tr>
+              </thead>
+              <tbody
+                class="text-center"
+                *ngFor="let figurine of figurineList | orderBy"
+              >
+                <tr>
+                  <td>
+                    {{ figurineList[0].name }}
+                  </td>
+                  <td>{{ figurineList[0].prix }}€</td>
+                </tr>
+                <tr>
+                  <td>
+                    {{ figurineList[1].name }}
+                  </td>
+                  <td>{{ figurineList[1].prix }}€</td>
+                </tr>
+                <tr>
+                  <td>
+                    {{ figurineList[2].name }}
+                  </td>
+                  <td>{{ figurineList[2].prix }}€</td>
+                </tr>
+                <tr>
+                  <td>
+                    {{ figurineList[3].name }}
+                  </td>
+                  <td>{{ figurineList[3].prix }}€</td>
+                </tr>
+              </tbody>
+            </div>
+          </table>
         </div>
-      </table>
+      </div>
+
       <button
-        class="flex m-auto p-auto"
+        class="flex text-center mx-auto my-3 p-auto"
         (click)="orderBy = orderBy === 'asc' ? 'desc' : 'asc'"
       >
         Trier par prix croissant
       </button>
       <button
-        class="flex m-auto p-auto"
+        class="flex text-center mx-auto my-3 p-auto"
         (click)="orderBy = orderBy === 'desc' ? 'desc' : 'asc'"
       >
         Trier par prix décroissant

@@ -1,1 +1,19 @@
+a[href^="mailto"]::before {
+  content: "📧 ";
+}
 
+a[href^="tel"]::before {
+  content: "📞 ";
+}
+
+footer {
+  background-color: #da001e;
+}
+address {
+  color: white;
+}
+button {
+  background-color: #f9daa3;
+  border-color: #f9daa3;
+  color: #151217;
+}
