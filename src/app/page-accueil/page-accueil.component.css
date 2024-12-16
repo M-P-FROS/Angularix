@@ -1,0 +1,44 @@
+table {
+  border-collapse: collapse;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+td,
+th {
+  background-color: #f9d0a3;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+.presentation {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "fonttwo";
+  font-size: 3vw;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f9d0a3;
+}
+.tableautrie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoangularix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

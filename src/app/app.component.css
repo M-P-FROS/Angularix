@@ -1,0 +1,16 @@
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "fontone";
+  src: url(../assets/bubbleboddy/bubbleboddyneue-regular\ trial.ttf);
+}
+
+@font-face {
+  font-family: "fonttwo";
+  src: url(../assets/comfortaa/Comfortaa-Regular.ttf);
+}
